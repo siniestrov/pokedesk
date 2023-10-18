@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Pokémon</title>
+</head>
+<body>
+    <h1 class="text-center mt-4">Catálogo de Pokémon</h1>
+
+    <!-- Barra de búsqueda, filtro de tipo y botón de ordenar -->
+    <div class="container mt-4">
+        <input type="text" id="busqueda" class="form-control mb-3" placeholder="Buscar por nombre...">
+        <select id="filtro" class="form-control">
+            <option value="todos">Todos</option>
+            <option value="grass">Planta</option>
+            <option value="fire">Fuego</option>
+            <option value="rock">Roca</option>
+            <option value="psychic">Psíquico</option>
+            <option value="ice">Hielo</option>
+            <option value="dragon">Dragón</option>
+            <option value="fighting">Lucha</option>
+            <option value="ground">Tierra</option>
+            <option value="fairy">Hada</option>
+            <option value="normal">Normal</option>
+            <option value="electric">Eléctrico</option>
+            <option value="flying">Volador</option>
+            <option value="water">Agua</option>
+        </select>
+        <button id="ordenar" class="btn btn-primary mb-3">Ordenar por nombre</button>
+    </div>
+
+    <!-- Tarjetas de Pokémon -->
+    <div class="container" id="pokemonCards"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
